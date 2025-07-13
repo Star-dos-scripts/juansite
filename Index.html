@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfil do Juan</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #36393f;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .profile-container {
+      width: 400px;
+      background-color: #2f3136;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    }
+    .banner {
+      width: 100%;
+      height: 150px;
+      background-image: url('https://cdn.discordapp.com/attachments/1383203666328289430/1393763368728399922/92193d7774745317e59cf09953f0d96c.gif?ex=68745ac9&is=68730949&hm=a1a9983bd7c9447242e7d825964081472bf1d2ea537a4c85803ca46eabd47a67&');
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+    .profile-photo {
+      position: absolute;
+      bottom: -50px;
+      left: 20px;
+      width: 100px;
+      height: 100px;
+      border: 4px solid #2f3136;
+      border-radius: 50%;
+      background-image: url('https://cdn.discordapp.com/avatars/1349837392344911966/03db625e40f9cdbc62840c4ff4d9f2b5.webp?size=2048');
+      background-size: cover;
+      background-position: center;
+    }
+    .profile-info {
+      padding: 60px 20px 20px 20px;
+      text-align: left;
+    }
+    .username {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .discriminator {
+      font-size: 18px;
+      color: #b9bbbe;
+      margin-left: 8px;
+      font-weight: 500;
+    }
+    .status {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #43b581; /* verde online */
+      font-weight: 600;
+    }
+    .about {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #dcddde;
+      line-height: 1.4;
+    }
+    .copy-button {
+      margin-top: 20px;
+      background-color: #5865F2; /* roxo Discord */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.3s ease;
+    }
+    .copy-button:hover {
+      background-color: #4752c4;
+    }
+    .copy-button svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <div class="banner">
+      <div class="profile-photo"></div>
+    </div>
+    <div class="profile-info">
+      <div>
+        <span class="username">Juan</span>
+        <span class="discriminator">@juan_scripts</span>
+      </div>
+      <div class="status">● Online</div>
+      <div class="about">
+        Opa!! eu sou o Juan, precisa de ajuda no jogo forsaken? eu upo contas
+      </div>
+      <button class="copy-button" onclick="copyNick()">
+        <!-- Ícone do Discord em SVG -->
+        <svg viewBox="0 0 24 24">
+          <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.8732.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"></path>
+        </svg>
+        Copiar Nick
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function copyNick() {
+      const nick = "juan_scripts";
+      navigator.clipboard.writeText(nick).then(() => {
+        alert(`Nick "${nick}" copiado!`);
+      }).catch(err => {
+        alert("Erro ao copiar.");
+      });
+    }
+  </script>
+</body>
+</html>
