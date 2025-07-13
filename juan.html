@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perfil do Juan</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #36393f;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .profile-container {
+            width: 400px;
+            background-color: #2f3136;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+        .banner {
+            width: 100%;
+            height: 150px;
+            background-image: url('https://cdn.discordapp.com/attachments/1383203666328289430/1393763368728399922/92193d7774745317e59cf09953f0d96c.gif?ex=68745ac9&is=68730949&hm=a1a9983bd7c9447242e7d825964081472bf1d2ea537a4c85803ca46eabd47a67&');
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        .profile-photo {
+            position: absolute;
+            bottom: -50px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            border: 4px solid #2f3136;
+            border-radius: 50%;
+            background-image: url('https://cdn.discordapp.com/avatars/1349837392344911966/03db625e40f9cdbc62840c4ff4d9f2b5.webp?size=2048');
+            background-size: cover;
+            background-position: center;
+        }
+        .profile-info {
+            padding: 60px 20px 20px 20px;
+            text-align: left;
+        }
+        .username {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+        }
+        .discriminator {
+            font-size: 18px;
+            color: #b9bbbe;
+            margin-left: 8px;
+            font-weight: 500;
+        }
+        .status {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #43b581; /* verde online */
+            font-weight: 600;
+        }
+        .about {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #dcddde;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="banner">
+            <div class="profile-photo"></div>
+        </div>
+        <div class="profile-info">
+            <div>
+                <span class="username">Juan</span>
+                <span class="discriminator">discord : @juan_scripts</span>
+            </div>
+            <div class="status">● Online</div>
+            <div class="about">
+                Opa!! eu sou o Juan, precisa de ajuda no jogo forsaken? eu upo contas
+            </div>
+        </div>
+    </div>
+</body>
+</html>
